@@ -43,6 +43,7 @@
     <Compile Include="Behavior.cs" />
     <Compile Include="Components\Actions\BehaviorAction.cs" />
     <Compile Include="Components\BehaviorComponent.cs" />
+    <Compile Include="Components\Composites\ParallelSelector.cs" />
     <Compile Include="Components\Composites\ParallelSequence.cs" />
     <Compile Include="Components\Composites\RandomSelector.cs" />
     <Compile Include="Components\Composites\RootSelector.cs" />

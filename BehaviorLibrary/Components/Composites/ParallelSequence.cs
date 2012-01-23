@@ -29,11 +29,11 @@ namespace BehaviorLibrary.Components.Composites
         public override BehaviorReturnCode Behave()
         {
 
-            foreach(BehaviorComponent bc in p_Behaviors)
+            for(int i = 0; i < p_Behaviors.Length;i++)
             {
                 try
                 {
-                    switch (bc.Behave())
+                    switch (p_Behaviors[i].Behave())
                     {
                         case BehaviorReturnCode.Failure:
                             ReturnCode = BehaviorReturnCode.Failure;
