@@ -10,6 +10,7 @@ namespace BehaviorLibrary.Components.Actions
 
         private Func<BehaviorReturnCode> ba_Action;
 
+        public BehaviorAction() { }
 
         public BehaviorAction(Func<BehaviorReturnCode> action)
         {

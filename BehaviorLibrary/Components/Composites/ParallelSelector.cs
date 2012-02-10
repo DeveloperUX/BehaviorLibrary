@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BehaviorLibrary.Components.Composites
 {
-    class ParallelSelector : BehaviorComponent
+    public class ParallelSelector : BehaviorComponent
     {
 
         protected BehaviorComponent[] p_Behaviors;
@@ -34,6 +34,33 @@ namespace BehaviorLibrary.Components.Composites
         /// <returns>the behaviors return code</returns>
         public override BehaviorReturnCode Behave()
         {
+            
+            for (int i = 0; i < p_SelLength; i++)
+            {
+                try
+                {
+                    switch (p_Behaviors[i].Behave())
+                    {
+                        case BehaviorReturnCode.Failure:
+                            continue;
+                        case BehaviorReturnCode.Success:
+                            ReturnCode = BehaviorReturnCode.Success;
+                            return ReturnCode;
+                        case BehaviorReturnCode.Running:
+                            ReturnCode = BehaviorReturnCode.Running;
+                            return ReturnCode;
+                        default:
+                            continue;
+                    }
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+            }
+
+
+            /*
             while (p_Selections < p_SelLength)
             {
                 try
@@ -60,7 +87,7 @@ namespace BehaviorLibrary.Components.Composites
                     p_Selections++;
                     continue;
                 }
-            }
+            }*/
 
             p_Selections = 0;
             ReturnCode = BehaviorReturnCode.Failure;
