@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BehaviorLibrary.Components.Decorators
 {
-    class Counter : BehaviorComponent
+    public class Counter : BehaviorComponent
     {
         private int c_MaxCount;
         private int c_Counter = 0;

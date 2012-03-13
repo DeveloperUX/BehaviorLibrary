@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BehaviorLibrary.Components.Decorators
 {
-    class Timer : BehaviorComponent
+    public class Timer : BehaviorComponent
     {
 
         private Func<int> t_ElapsedTimeFunction;
