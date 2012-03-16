@@ -12,7 +12,7 @@ namespace BehaviorLibrary.Components.Decorators
 
         private BehaviorComponent t_Behavior;
 
-        private int t_TimeElapsed;
+        private int t_TimeElapsed = 0;
 
         private int t_WaitTime;
 
@@ -41,6 +41,7 @@ namespace BehaviorLibrary.Components.Decorators
 
                 if (t_TimeElapsed > t_WaitTime)
                 {
+                    t_TimeElapsed = 0;
                     ReturnCode = t_Behavior.Behave();
                     return ReturnCode;
                 }
