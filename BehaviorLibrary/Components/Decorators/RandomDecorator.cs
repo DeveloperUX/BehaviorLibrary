@@ -39,8 +39,8 @@ namespace BehaviorLibrary.Components.Decorators
                 }
                 else
                 {
-                    ReturnCode = BehaviorReturnCode.Success;
-                    return BehaviorReturnCode.Success;
+                    ReturnCode = BehaviorReturnCode.Running;
+                    return BehaviorReturnCode.Running;
                 }
             }
             catch (Exception)
