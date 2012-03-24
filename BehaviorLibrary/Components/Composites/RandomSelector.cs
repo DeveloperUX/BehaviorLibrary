@@ -10,7 +10,8 @@ namespace BehaviorLibrary.Components.Composites
 
         private BehaviorComponent[] r_Behaviors;
 
-        private Random r_Random = new Random();
+        //use current milliseconds to set random seed
+        private Random r_Random = new Random(DateTime.Now.Millisecond);
 
         /// <summary>
         /// Randomly selects and performs one of the passed behaviors
@@ -30,6 +31,8 @@ namespace BehaviorLibrary.Components.Composites
         /// <returns>the behaviors return code</returns>
         public override BehaviorReturnCode Behave()
         {
+            r_Random = new Random(DateTime.Now.Millisecond);
+
             try
             {
                 switch (r_Behaviors[r_Random.Next(0, r_Behaviors.Length - 1)].Behave())
