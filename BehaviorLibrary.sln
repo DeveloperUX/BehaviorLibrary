@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehaviorLibrary", "BehaviorLibrary\BehaviorLibrary.csproj", "{93982039-D336-4BB5-8171-4410FBCF5A16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehaviorLibrary", "BehaviorLibrary\BehaviorLibrary.csproj", "{CC824B6F-6145-485F-9604-FB94F0ECACA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{93982039-D336-4BB5-8171-4410FBCF5A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93982039-D336-4BB5-8171-4410FBCF5A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93982039-D336-4BB5-8171-4410FBCF5A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93982039-D336-4BB5-8171-4410FBCF5A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC824B6F-6145-485F-9604-FB94F0ECACA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC824B6F-6145-485F-9604-FB94F0ECACA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC824B6F-6145-485F-9604-FB94F0ECACA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC824B6F-6145-485F-9604-FB94F0ECACA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BehaviorLibrary\BehaviorLibrary.csproj
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
