@@ -13,6 +13,8 @@ namespace BehaviorLibrary
         Running
     }
 
+    public delegate BehaviorReturnCode BehaviorReturn();
+
     /// <summary>
     /// 
     /// </summary>
@@ -61,8 +63,10 @@ namespace BehaviorLibrary
                         return ReturnCode;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.Error.WriteLine(e.ToString());
+                
                 ReturnCode = BehaviorReturnCode.Failure;
                 return ReturnCode;
             }

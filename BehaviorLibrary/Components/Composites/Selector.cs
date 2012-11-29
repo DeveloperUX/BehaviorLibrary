@@ -57,8 +57,10 @@ namespace BehaviorLibrary.Components.Composites
                             return ReturnCode;
                     }
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
+                    Console.Error.WriteLine(e.ToString());
+
                     selections++;
                     ReturnCode = BehaviorReturnCode.Failure;
                     return ReturnCode;

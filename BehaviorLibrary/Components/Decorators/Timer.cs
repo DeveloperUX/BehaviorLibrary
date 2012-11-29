@@ -51,8 +51,10 @@ namespace BehaviorLibrary.Components.Decorators
                     return BehaviorReturnCode.Running;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.Error.WriteLine(e.ToString());
+
                 ReturnCode = BehaviorReturnCode.Failure;
                 return BehaviorReturnCode.Failure;
             }

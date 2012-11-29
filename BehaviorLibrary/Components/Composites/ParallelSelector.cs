@@ -53,8 +53,10 @@ namespace BehaviorLibrary.Components.Composites
                             continue;
                     }
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
+                    Console.Error.WriteLine(e.ToString());
+
                     continue;
                 }
             }
