@@ -45,8 +45,9 @@ namespace BehaviorLibrary.Components.Conditionals
             }
             catch (Exception e)
             {
+#if DEBUG
                 Console.Error.WriteLine(e.ToString());
-
+#endif
                 ReturnCode = BehaviorReturnCode.Failure;
                 return ReturnCode;
             }

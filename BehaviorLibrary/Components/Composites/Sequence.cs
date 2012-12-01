@@ -56,8 +56,9 @@ namespace BehaviorLibrary.Components.Composites
                 }
                 catch (Exception e)
                 {
-                    Console.Error.WriteLine(e.ToString());
-
+#if DEBUG
+                Console.Error.WriteLine(e.ToString());
+#endif
                     sequence = 0;
                     ReturnCode = BehaviorReturnCode.Failure;
                     return ReturnCode;
