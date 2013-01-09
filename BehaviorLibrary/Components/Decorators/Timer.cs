@@ -39,7 +39,7 @@ namespace BehaviorLibrary.Components.Decorators
             {
                 t_TimeElapsed += t_ElapsedTimeFunction.Invoke();
 
-                if (t_TimeElapsed > t_WaitTime)
+                if (t_TimeElapsed >= t_WaitTime)
                 {
                     t_TimeElapsed = 0;
                     ReturnCode = t_Behavior.Behave();
