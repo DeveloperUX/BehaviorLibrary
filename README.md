@@ -40,7 +40,7 @@ Example of a simple A* following AI on a tilemap
 	ParallelSequence follow = new ParallelSequence(new Inverter(tooClose), updatePosition, ifMovedCreateNewPath, ifPathFoundGetPath, ifPathIsNewUseIt, ifReachedCellGetNext, ifNotReachedTargetMoveTowardsCell, animate);
 
 	//setup root node, choose initialization phase or pathing/movement phase
-	root = new RootSelector(switchBehaviors, initialize, follow);
+	RootSelector root = new RootSelector(switchBehaviors, initialize, follow);
 
 	//set a reference to the root
 	Behavior behavior = new Behavior(root);
